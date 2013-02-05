@@ -1,0 +1,35 @@
+﻿@model Jq.Grid.Demo.Models.JsonExampleGridModel
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JSON Example</title>
+
+    <!-- The jQuery UI theme that will be used by the grid -->
+    @Styles.Render("~/Content/themes/base/css")
+
+    <!-- The jQuery UI theme extension jqGrid needs -->
+    <link href="/Content/ui.jqgrid.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- The Partial HTML Grid Table -->
+    @Html.Grid().JQGridPartial(Model.Grid)
+
+    <!-- JavaScript at the bottom for fast page loading -->
+    @Scripts.Render("~/bundles/jquery")
+    <!-- The localization file we need, English in this case -->
+    <script src="/Scripts/i18n/grid.locale-en.js"></script>
+    <!-- The jqGrid client-side javascript -->
+    <script src="/Scripts/jquery.jqGrid.src.js"></script>
+    <!-- The Grid Script client-side javascript -->
+    @Html.Grid().JQGridScript(Model.Grid)
+</body>
+</html>
+
