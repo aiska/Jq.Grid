@@ -26,13 +26,7 @@ namespace Jq.Grid.Sample.Models
                 {
                     if (!context.Database.Exists())
                     {
-                        try
-                        {
-                            ((IObjectContextAdapter)context).ObjectContext.CreateDatabase();
-                        }
-                        catch (Exception)
-                        {
-                        }
+                        ((IObjectContextAdapter)context).ObjectContext.CreateDatabase();
                         Seed(context);
                     }
                 }
