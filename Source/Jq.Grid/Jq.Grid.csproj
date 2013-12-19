@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF1822CA-A62F-45E8-A4D0-FBDB03157D8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jq</RootNamespace>
+    <AssemblyName>Jq.Grid</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Grid\AddDialogSettings.cs" />
+    <Compile Include="Grid\AjaxCallBackMode.cs" />
+    <Compile Include="Grid\AppearanceSettings.cs" />
+    <Compile Include="Grid\AutoCompleteDisplayMode.cs" />
+    <Compile Include="Grid\AutoCompleteMode.cs" />
+    <Compile Include="Grid\Formatter\CheckBoxFormatter.cs" />
+    <Compile Include="Grid\ClientSideEvents.cs" />
+    <Compile Include="Grid\CompiledOn.cs" />
+    <Compile Include="Grid\Formatter\CurrencyFormatter.cs" />
+    <Compile Include="Grid\Formatter\CustomFormatter.cs" />
+    <Compile Include="Grid\CustomValidator.cs" />
+    <Compile Include="Grid\DataTypeNotSetException.cs" />
+    <Compile Include="Grid\DatePickerDisplayMode.cs" />
+    <Compile Include="Grid\DateTimeExtensions.cs" />
+    <Compile Include="Grid\DateValidator.cs" />
+    <Compile Include="Grid\DeleteDialogSettings.cs" />
+    <Compile Include="Grid\DropDownListClientSideEvents.cs" />
+    <Compile Include="Grid\EditActionIconsSettings.cs" />
+    <Compile Include="Grid\EditDialogSettings.cs" />
+    <Compile Include="Grid\EditType.cs" />
+    <Compile Include="Grid\EmailFormatter.cs" />
+    <Compile Include="Grid\EmailValidator.cs" />
+    <Compile Include="Grid\ExportDataRange.cs" />
+    <Compile Include="Grid\GridAttribute.cs" />
+    <Compile Include="Grid\GridColumnAttribute.cs" />
+    <Compile Include="Grid\GridExportSettings.cs" />
+    <Compile Include="Grid\GridUtil.cs" />
+    <Compile Include="Grid\GroupField.cs" />
+    <Compile Include="Grid\GroupSettings.cs" />
+    <Compile Include="Grid\GroupSummaryType.cs" />
+    <Compile Include="Grid\Guard.cs" />
+    <Compile Include="Grid\HierarchyMode.cs" />
+    <Compile Include="Grid\HierarchySettings.cs" />
+    <Compile Include="Grid\HtmlHelperExtensions.cs" />
+    <Compile Include="Grid\IEnumerableExtensions.cs" />
+    <Compile Include="Grid\Formatter\IntegerFormatter.cs" />
+    <Compile Include="Grid\IntegerValidator.cs" />
+    <Compile Include="Grid\JQAutoComplete.cs" />
+    <Compile Include="Grid\JQAutoCompleteRenderer.cs" />
+    <Compile Include="Grid\JQDatePicker.cs" />
+    <Compile Include="Grid\JQDatePickerRenderer.cs" />
+    <Compile Include="Grid\JQDropDownList.cs" />
+    <Compile Include="Grid\JQDropDownListRenderer.cs" />
+    <Compile Include="Grid\JQGrid.cs" />
+    <Compile Include="Grid\JQGridColumn.cs" />
+    <Compile Include="Grid\JQGridColumnFormatter.cs" />
+    <Compile Include="Grid\JQGridDataResolvedEventArgs.cs" />
+    <Compile Include="Grid\JQGridDataResolvedEventHandler.cs" />
+    <Compile Include="Grid\JQGridEditClientSideValidator.cs" />
+    <Compile Include="Grid\JQGridEditData.cs" />
+    <Compile Include="Grid\JQGridEditFieldAttribute.cs" />
+    <Compile Include="Grid\JQGridHeaderGroup.cs" />
+    <Compile Include="Grid\JQGridModel.cs" />
+    <Compile Include="Grid\JQGridRenderer.cs" />
+    <Compile Include="Grid\JQGridRenderMode.cs" />
+    <Compile Include="Grid\JQGridState.cs" />
+    <Compile Include="Grid\JQGridToolBarButton.cs" />
+    <Compile Include="Grid\JQGridTreeExpandData.cs" />
+    <Compile Include="Grid\JQListItem.cs" />
+    <Compile Include="Grid\JQMultiSelect.cs" />
+    <Compile Include="Grid\JQMultiSelectRenderer.cs" />
+    <Compile Include="Grid\JQTreeNode.cs" />
+    <Compile Include="Grid\JQTreeNodeDropEventArgs.cs" />
+    <Compile Include="Grid\JQTreeView.cs" />
+    <Compile Include="Grid\JQTreeViewRenderer.cs" />
+    <Compile Include="Grid\JqueryGridNamespace.cs" />
+    <Compile Include="Grid\JsonAddDialog.cs" />
+    <Compile Include="Grid\JsonColModel.cs" />
+    <Compile Include="Grid\JsonCustomButton.cs" />
+    <Compile Include="Grid\JsonDelDialog.cs" />
+    <Compile Include="Grid\JsonEditDialog.cs" />
+    <Compile Include="Grid\JsonMultipleSearch.cs" />
+    <Compile Include="Grid\JsonResponse.cs" />
+    <Compile Include="Grid\JsonRow.cs" />
+    <Compile Include="Grid\JsonSearchDialog.cs" />
+    <Compile Include="Grid\JsonSearchToolBar.cs" />
+    <Compile Include="Grid\JsonToolBar.cs" />
+    <Compile Include="Grid\JsonTreeResponse.cs" />
+    <Compile Include="Grid\JsonUtil.cs" />
+    <Compile Include="Grid\Formatter\LinkFormatter.cs" />
+    <Compile Include="Grid\MaxValueValidator.cs" />
+    <Compile Include="Grid\MinValueValidator.cs" />
+    <Compile Include="Grid\MultipleSearchRule.cs" />
+    <Compile Include="Grid\MultiSelectClientSideEvents.cs" />
+    <Compile Include="Grid\MultiSelectKey.cs" />
+    <Compile Include="Grid\MultiSelectMode.cs" />
+    <Compile Include="Grid\NumberFormatter.cs" />
+    <Compile Include="Grid\NumberValidator.cs" />
+    <Compile Include="Grid\PagerSettings.cs" />
+    <Compile Include="Grid\RenderingMode.cs" />
+    <Compile Include="Grid\RequiredValidator.cs" />
+    <Compile Include="Grid\SearchDataType.cs" />
+    <Compile Include="Grid\SearchDialogSettings.cs" />
+    <Compile Include="Grid\SearchOperation.cs" />
+    <Compile Include="Grid\SearchToolBarAction.cs" />
+    <Compile Include="Grid\SearchToolBarSettings.cs" />
+    <Compile Include="Grid\SearchType.cs" />
+    <Compile Include="Grid\ShowOn.cs" />
+    <Compile Include="Grid\SortAction.cs" />
+    <Compile Include="Grid\SortDirection.cs" />
+    <Compile Include="Grid\SortIconsPosition.cs" />
+    <Compile Include="Grid\SortSettings.cs" />
+    <Compile Include="Grid\StringBuilderExtensions.cs" />
+    <Compile Include="Grid\StringExtensions.cs" />
+    <Compile Include="Grid\TextAlign.cs" />
+    <Compile Include="Grid\TimeValidator.cs" />
+    <Compile Include="Grid\ToolBarAlign.cs" />
+    <Compile Include="Grid\ToolBarButtonPosition.cs" />
+    <Compile Include="Grid\ToolBarPosition.cs" />
+    <Compile Include="Grid\ToolBarSettings.cs" />
+    <Compile Include="Grid\TreeGridSettings.cs" />
+    <Compile Include="Grid\TreeViewClientSideEvents.cs" />
+    <Compile Include="Grid\UrlValidator.cs" />
+    <Compile Include="Grid\Util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Linq.Dynamic\ClassFactory.cs" />
+    <Compile Include="System.Linq.Dynamic\DynamicClass.cs" />
+    <Compile Include="System.Linq.Dynamic\DynamicExpression.cs" />
+    <Compile Include="System.Linq.Dynamic\DynamicOrdering.cs" />
+    <Compile Include="System.Linq.Dynamic\DynamicProperty.cs" />
+    <Compile Include="System.Linq.Dynamic\DynamicQueryable.cs" />
+    <Compile Include="System.Linq.Dynamic\ExpressionParser.cs" />
+    <Compile Include="System.Linq.Dynamic\IQueryableUtil.cs" />
+    <Compile Include="System.Linq.Dynamic\ParseException.cs" />
+    <Compile Include="System.Linq.Dynamic\Signature.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

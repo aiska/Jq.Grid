@@ -1,0 +1,5 @@
+﻿Todo v.1.0.2
+* Data Anotation
+
+Update v.1.0.1
+* Fix DataFormatString render, add boolean string value

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jq.Grid", "Jq.Grid\Jq.Grid.csproj", "{EF1822CA-A62F-45E8-A4D0-FBDB03157D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jq.Grid.Sample", "..\Jq.Grid.Sample\Jq.Grid.Sample\Jq.Grid.Sample.csproj", "{B4D47D3C-A27B-4026-AFAD-B4AFBCBA438B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF1822CA-A62F-45E8-A4D0-FBDB03157D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1822CA-A62F-45E8-A4D0-FBDB03157D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1822CA-A62F-45E8-A4D0-FBDB03157D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1822CA-A62F-45E8-A4D0-FBDB03157D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D47D3C-A27B-4026-AFAD-B4AFBCBA438B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D47D3C-A27B-4026-AFAD-B4AFBCBA438B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D47D3C-A27B-4026-AFAD-B4AFBCBA438B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D47D3C-A27B-4026-AFAD-B4AFBCBA438B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
